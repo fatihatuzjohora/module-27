@@ -32,7 +32,10 @@ function showElementById(elementId) {
 
 function continueGame () {
     const alphabet=getARandomAlphabet();
-    console.log('rendom',alphabet);
+  //  console.log('rendom',alphabet);
+
+  const currentAlphabetElement=document.getElementById('currentAlphabet')
+  currentAlphabetElement.innerText=alphabet;
 
     // set bgcolor 
      setBgColorById(alphabet);
@@ -42,14 +45,14 @@ function continueGame () {
 function getARandomAlphabet() {
     const alphabatesString='abcdefghijklmnopqrstuvwxyz';
     const alphabets=alphabatesString.split('');
-   console.log(alphabets);
+ //  console.log(alphabets);
     //math alphabets
     const randomNumber= Math.random()*25;
     const index=Math.round(randomNumber);
-    console.log(index);
+  //  console.log(index);
 
 const alphabet=alphabets[index];
- console.log(index,alphabet);
+ //console.log(index,alphabet);
 return alphabet
 }
 
