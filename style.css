@@ -5,3 +5,8 @@ git commit -m "added"
 git branch -M main
 git remote add origin  https://github.com/fatihatuzjohora/module-27.git
 git push -u origin main -f */
+
+
+.font{
+    font-family: "Roboto", sans-serif;
+}
